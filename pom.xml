@@ -11,6 +11,7 @@
 
     <modules>
         <module>actuator-custom</module>
+        <module>feature-flags</module>
     </modules>
 
     <properties>

@@ -1,0 +1,9 @@
+snorbuse:
+  features:
+    greeter:
+      status: USERS
+      users:
+        - user1
+        - user2
+    nice-status:
+      status: ACTIVE
