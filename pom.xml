@@ -12,6 +12,7 @@
     <modules>
         <module>actuator-custom</module>
         <module>feature-flags</module>
+        <module>resilience-bus</module>
     </modules>
 
     <properties>
