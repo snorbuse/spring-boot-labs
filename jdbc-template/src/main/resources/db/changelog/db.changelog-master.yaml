@@ -1,0 +1,45 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: dread
+      changes:
+        - createTable:
+            tableName: person
+            columns:
+              - column:
+                  name: personid
+                  type: int
+                  constraints:
+                    primary_key: true
+                    nullable: false
+                    primaryKeyName: person_id_pk
+              - column:
+                  name: firstname
+                  type: varchar(255)
+              - column:
+                  name: lastname
+                  type: varchar(255)
+  - changeSet:
+      id: 2
+      author: dread
+      changes:
+        - createTable:
+            tableName: car
+            columns:
+              - column:
+                  name: id
+                  type: integer
+                  autoIncrement: true
+                  constraints:
+                    primary_key: true
+                    nullable: false
+                    primaryKeyName: car_id_pk
+              - column:
+                  name: regnr
+                  type: varchar(255)
+              - column:
+                  name: model
+                  type: varchar(255)
+              - column:
+                  name: personid
+                  type: int

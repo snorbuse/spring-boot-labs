@@ -13,6 +13,7 @@
         <module>actuator-custom</module>
         <module>feature-flags</module>
         <module>resilience-bus</module>
+        <module>jdbc-template</module>
     </modules>
 
     <properties>
@@ -33,5 +34,18 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+    </dependencies>
+
 
 </project>
